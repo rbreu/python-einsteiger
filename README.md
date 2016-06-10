@@ -225,6 +225,8 @@ print(voname)
 
 Nun wollen wir Programme schreiben, die wir immer wieder aufrufen können, ohne sie jedes mal neu tippen zu müssen. Dazu schreiben wir unseren Python-Code in eine Datei.
 
+[Die Lösungen zu den folgenden Aufgaben findest du online.](https://github.com/rbreu/python-einsteiger/tree/master/loesungen)
+
 **Aufgabe 2-1** Das erste Programm
 
 Öffne den Editor **gedit**. Schreibe dein erstes Python-Programm:
