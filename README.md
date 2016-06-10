@@ -3,26 +3,21 @@
 
 *Rebecca Breu, Thomas Koch*
 
+
+## Warum Python?
+
+* Einfache, klare Syntax, daher leicht zu lernen
+* Komplette Programmiersprache mit vielen Bibliotheken, kann in vielen Feldern eingesetzt werden, z.B. Webentwicklung, wissenschafltiches Rechnen, Serveradministration, ...
+* Auf dem Raspberry Pi sehr verbreitet
+* Implementation für Mikroprozessoren existiert
+* ...
+
+
 In dieser Einführung benutzen wir **Python 3**. Immer noch sehr verbreitet ist Python 2, allerdings ist es nicht kompatibel zu Python 3. 
 
 Benötigt werden: 
-* Installation von [Python 3](https://www.python.org/downloads/)
+* Installation von [Python 3](https://www.python.org/downloads/). Auf den meisten Linux-Systemen (z.B. Raspbian) sind sowohl Python 2 als auch Python 3 standardmäßig installiert.
 * Ein Editor, z.B. Gedit, Atom, Sublime, ...
-
-## Weiterführende Links
-
-* [Python 3-Tutorial](https://py-tutorial-de.readthedocs.io/de/python-3.3/) - Deutsch
-* [Python 3-Dokumentation](https://docs.python.org/3/library/index.html) - Englisch
-* [Code Combat](https://codecombat.com/) - mehrsprachig - Programmierlernspiel
-* [Python lernen auf dem Raspberry Pi](https://www.youtube.com/channel/UCRAvo5cQWyfog8nRzlf_jWg) - Englisch - Videoreihe
-
-## Bücher
-
-* Raspberry Pi programmieren mit Python, Michael Weigend
-* Python kinderleicht!, Jason Briggs
-* Python für Kids, Gregor Lingl
-* Python 3: Das umfassende Handbuch, Johannes Ernesti und Peter Kaiser (Autor) 
-
 
 ## Teil 1: Erste Schritte in der Konsole
 
@@ -283,7 +278,7 @@ Mit einer for-Schleife können wir Python ganz einfach mitteilen, dass ein besti
 
 ```python
 for i in range(1, 11):
-    print('Die aktuelle Zahl lautet:')
+    print("Die aktuelle Zahl lautet:")
     print(i)
 print("Nun ist die Schleife zuende.")
 ```
@@ -316,28 +311,7 @@ Die zweite Zeile sieht auf den ersten Blick merkwürdig aus. Hier nimmt Python z
 
 Benutze nun eine solche Anweisung in einer for-Schleife, um alle Zahlen von 1 bis 100 aufzuaddieren. Als Ergebnis solltest du 5050 herausbekommen.
 
-**Aufgabe 2-5** Schleifen über Strings
-
-Man kann for-Schleifen auch mit anderen Dingen als range-Zahlenbereichen erzeugen. Zum Beispiel mit Strings:
-
-
-```python
-for buchstabe in "Rebecca":
-    print("Buchstabe:", buchstabe)
-```
-
-    Buchstabe: R
-    Buchstabe: e
-    Buchstabe: b
-    Buchstabe: e
-    Buchstabe: c
-    Buchstabe: c
-    Buchstabe: a
-
-
-Ändere das Programm so ab, dass der Nutzer seinen eigenen Namen eingaben kann, über den dann die Schleife gebildet wird.
-
-**Aufgabe 2-6** If-Bedingungen
+**Aufgabe 2-5** If-Bedingungen
 
 Mit if-Bedingungen kann man Code-Teile nur unter bestimmten Bedingungen ausführen lassen. Versuche, das folgende Programm zu verstehen:
 
@@ -362,15 +336,56 @@ Das, was nach dem `if` steht, ist die Bedingung, die erfüllt werden muss, damit
 
 Beachte, dass die Prüfung auf Gleichheit mit einem doppeltem Gleichzeichen erfolgt: `==`
 
-Du kannst auch Strings auf Gleichheit prüfen: `if name == "Rebecca"`. Schreibe ein Programm, das einen Text ausgibt, wenn der Nutzer deinen Namen eingibt.
+Probiere das obige Programm aus.
 
-**Aufgabe 2-7** Buchstaben zählen.
+**Aufgabe 2-6** Zahlenraten
 
-Schreibe ein Programm, dass zählt, wie oft der Buchstabe "e" in einem Wort vorkommt. Dazu musst du eine if-Abfrage in eine for-Schleife einbauen, du hast also einen einen eingerückten Block in einem eingerückten Block. Der wird dann mit 8 Leerzeichen eingerückt.
+Programmiere das Spiel Zahlenraten. Das Programm wählt eine zufällige Zahl zwischen 1 und 100, die der Spieler raten muss. Das Programm erwartet eine Eingabe vom Spieler und sagt, ob die eingegebe Zahl größer oder kleiner als die zu ratende Zahl ist. Ist die Zahl gleich, beendet das Programm, ansonsten darf der Spieler es noch einmal probieren.
 
-
+Erweitere dazu folgendes Programm:
 
 
 ```python
+from random import randint
+from sys import exit, stdin
 
+# Eine Zufallszahl zwischen 1 und 100 generieren:
+zufall = randint(1, 100)
+
+# Eine Schleife, die unendlich lange läuft:
+while True:
+
+    ...
+
+    if ... == ...:
+        print("Das ist richtig!")
+        # Das Programm beenden:
+        exit()
+
+    ...
 ```
+
+Wenn du das geschafft hast, kannst du auch mitzählen, wieviele Versuche der Spieler gebraucht hat und das am Ende ausgeben.
+
+## Weiterführende Links
+
+* [Python 3-Tutorial](https://py-tutorial-de.readthedocs.io/de/python-3.3/) - Deutsch
+* [Python 3-Dokumentation](https://docs.python.org/3/library/index.html) - Englisch
+* [Code Combat](https://codecombat.com/) - mehrsprachig - Programmierlernspiel
+* [Python lernen auf dem Raspberry Pi](https://www.youtube.com/channel/UCRAvo5cQWyfog8nRzlf_jWg) - Englisch - Videoreihe
+* [Python Challenge](http://www.pythonchallenge.com/) Eine Serie von Programmieraufgaben in Form von Rätseln - Englisch. Eher für Leute, die schon die ersten Python-Erfahrungen gesammelt haben.
+* [PEP 8](https://www.python.org/dev/peps/pep-0008/) Styleguide für Python-Programme
+
+## Bücher
+
+* Raspberry Pi programmieren mit Python, Michael Weigend
+* Python kinderleicht!, Jason Briggs
+* Python für Kids, Gregor Lingl
+* Python 3: Das umfassende Handbuch, Johannes Ernesti und Peter Kaiser
+
+## Sonstiges
+
+* [IPython](https://ipython.org/): Interaktive Python-Umgebung, die wesentlich komfortabler ist als die normale Python-Umgebung.
+* [MicroPython](https://micropython.org/): Python-Implementierung für Microprozessoren.
+
+

@@ -1,0 +1,17 @@
+from random import randint
+from sys import exit, stdin
+
+# Eine Zufallszahl zwischen 1 und 100 generieren:
+zufall = randint(1, 100)
+
+# Eine Schleife, die unendlich lange läuft:
+while True:
+
+    ...
+
+    if ... == ...:
+        print("Das ist richtig!")
+        # Das Programm beenden:
+        exit()
+
+    ...
