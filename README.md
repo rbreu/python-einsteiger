@@ -377,6 +377,7 @@ Wenn du das geschafft hast, kannst du auch mitzählen, wieviele Versuche der Spi
 * [Python lernen auf dem Raspberry Pi](https://www.youtube.com/channel/UCRAvo5cQWyfog8nRzlf_jWg) - Englisch - Videoreihe
 * [Python Challenge](http://www.pythonchallenge.com/) Eine Serie von Programmieraufgaben in Form von Rätseln - Englisch. Eher für Leute, die schon die ersten Python-Erfahrungen gesammelt haben.
 * [PEP 8](https://www.python.org/dev/peps/pep-0008/) Styleguide für Python-Programme
+* [... weitere Linksammlung](http://wiki.pythonde.pysv.org/Tutorial)
 
 ## Bücher
 
@@ -384,6 +385,7 @@ Wenn du das geschafft hast, kannst du auch mitzählen, wieviele Versuche der Spi
 * Python kinderleicht!, Jason Briggs
 * Python für Kids, Gregor Lingl
 * Python 3: Das umfassende Handbuch, Johannes Ernesti und Peter Kaiser
+* Einstieg in Python, Thomas Theis
 
 ## Sonstiges
 
@@ -391,3 +393,8 @@ Wenn du das geschafft hast, kannst du auch mitzählen, wieviele Versuche der Spi
 * [MicroPython](https://micropython.org/): Python-Implementierung für Microprozessoren.
 
 
+
+
+```python
+
+```
